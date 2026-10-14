@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Check-In</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Mood Check-In</h1>
+    <p id="greeting">Hello!</p>
+
+    <label for="nameInput">What's your name?</label>
+    <input type="text" id="nameInput" placeholder="Type your name">
+
+    <p>How are you feeling today?</p>
+    <div class="buttons">
+      <button onclick="chooseMood('happy')">😊 Happy</button>
+      <button onclick="chooseMood('sad')">😢 Sad</button>
+      <button onclick="chooseMood('tired')">😴 Tired</button>
+      <button onclick="chooseMood('stressed')">😣 Stressed</button>
+    </div>
+
+    <div id="result">
+      <div id="emoji">🤔</div>
+      <p id="message">Pick a mood to get a suggestion.</p>
+    </div>
+
+    <button id="resetBtn" onclick="resetVisits()">Reset visits</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
